@@ -14,8 +14,8 @@ public class MyController {
   @Autowired PersonRepository personRepository;
 
   @ResponseBody
-  @RequestMapping("/AddPerson")
-  public String addPerson(@RequestBody Person person) {
+  @RequestMapping("AddPerson")
+  String addPerson(@RequestBody Person person) {
 
     //STORE PERSON ENTITY
     personRepository.save(person);
